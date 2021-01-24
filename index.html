@@ -1,0 +1,82 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+        <title>Home | BJBR Consulting</title>
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <div class="nav-bar"><div style="grid-area: middle">
+                <h1 style="display: inline-block">
+                    <img src="logo.png" style="height: 100%; width: auto; display: inline-block"/>
+                    <span style="margin-left: 10px">BJBR Consulting</span>
+                </h1>
+            </div></div>
+            <div class="nav-bar">
+                <ul class="nav" style="grid-area: middle">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-middle">
+                <div>
+                    <h5 class="display-5 text-center">We are specialists providing consulting to the rail, transport and infrastructure industries.</h5>
+                    <br/>
+                    <p>
+                        We have over 25 years' experience in rail engineering, construction, maintenance and operation.
+                    </p>
+                    <p>
+                        We work with our rail clients to develop and implement infrastructure changes and operational improvement projects to meet their business objectives.
+                    </p>
+                    <p>
+                        We also partner with other consultancies where required to customise our services to client requirements and provide best overall solutions and value for money.
+                    </p>
+                </div>
+                <img src="images/Background/unnamed.jpg"/>
+            </div>
+        </div>
+        <div class="footer">
+            <img class="img-footer" src="images/footer_home/02 03 01 Hill Embarque _021.jpg"/>
+            <img class="img-footer" src="images/footer_home/020228_246_LAR_PH1.jpg"/>
+            <img class="img-footer" src="images/footer_home/391.7 Local Cable Trench-2.jpg"/>
+            <img class="img-footer" src="images/footer_home/DSCN0508.JPG"/>
+            <img class="img-footer" src="images/footer_home/IMG_0241.JPG"/>
+            <img class="img-footer" src="images/footer_home/IMG_0309 Site 3.JPG">
+            <img class="img-footer" src="images/footer_home/Loc HN11 Signal Erection-10.jpg"/>
+            <img class="img-footer" src="images/footer_home/Macdonaldtown Turnback signals 005.jpg"/>
+        </div>
+    </body>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } 
+            else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>

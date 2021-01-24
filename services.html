@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+        <title>Services | BJBR Consulting</title>
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <div class="nav-bar"><div style="grid-area: middle">
+                <h1 style="display: inline-block">
+                    <img src="logo.png" style="height: 100%; width: auto; display: inline-block"/>
+                    <span style="margin-left: 10px">BJBR Consulting</span>
+                </h1>
+            </div></div>
+            <div class="nav-bar">
+                <ul class="nav" style="grid-area: middle">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-middle">
+                <div>
+                    <h5 class="display-5 text-center">Our Services</h5>
+                    <p>
+                        BJBR Consulting provides specialist consultants to the Rail, Transport and Infrastructure sectors. Our experience has been developed in supporting a range of industry and government bodies. We provide cost-effective solutions to meet critical business objectives. Our expertise includes:
+                    </p>
+                    <div class="two-column">
+                        <ul>
+                            <li>Project Management</li>
+                            <li>Transport Planning</li>
+                            <li>Tender Preparation</li>
+                            <li>Asset Management</li>
+                            <li>Estimating</li>
+                            <li>Engineering Management</li>
+                            <li>Systems Engineering</li>
+                        </ul>
+                        <ul>
+                            <li>Test and Commissioning</li>
+                            <li>Rail Safety and Assurance</li>
+                            <li>Risk Management</li>
+                            <li>Type Approvals</li>
+                            <li>Preparation of Specifications</li>
+                            <li>Technical Reviews</li>
+                            <li>Technical Writing</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="images/Background/ntx7p3ninhiz.jpg"/>
+            </div>
+        </div>
+        <div class="footer">
+            <img class="img-footer" src="images/footer_services/Bogies 021220091282.jpg"/>
+            <img class="img-footer" src="images/footer_services/IMG_0370.jpg"/>
+            <img class="img-footer" src="images/footer_services/IMG_1923.JPG"/>
+            <img class="img-footer" src="images/footer_services/New Lynn-02.JPG"/>
+            <img class="img-footer" src="images/footer_services/Picture 004.jpg">
+            <img class="img-footer" src="images/footer_services/Tilt-Train_Drivers-Cab_25-4-99.jpg"/>
+            <img class="img-footer" src="images/footer_services/Westect Antenna.jpg"/>
+        </div>
+    </body>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } 
+            else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>

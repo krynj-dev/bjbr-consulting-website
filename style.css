@@ -1,0 +1,103 @@
+/* Style the header */
+.header {
+    padding: 14px 0px;
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: #84e0df;
+    border-bottom: black outset 2px;
+}
+  
+/* Page content */
+.content {
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    grid-template-areas: "lside middle rside";
+    background-color: white;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/* Default stylings */
+body {
+    margin: 0px;
+    min-height: 100vh;
+    font-size: 24px;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    grid-template-areas: "lside middle rside";
+}
+
+.footer {
+    height: 150px;
+    text-align: center;
+}
+
+.content-middle {
+    grid-area: middle;
+    padding: 10px 20px;
+    
+    position: relative;
+    overflow: hidden;
+    background-color: #222;
+    color: #fff;
+}
+
+.content-middle div {
+    position: relative;
+    z-index: 2;
+}
+
+.content-middle img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.content-middle .icon {
+    position: relative;
+    width: auto;
+    opacity: 1;
+    fill: #fff;
+}
+
+.content-middle a, .content-middle a:link, .content-middle a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-middle a:hover {
+    color: #ccc;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media (max-width: 481px) {
+    .two-column {
+        grid-template-columns: auto;
+    }
+}
+
+.img-footer {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
